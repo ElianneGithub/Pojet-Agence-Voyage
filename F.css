@@ -1,0 +1,12 @@
+#inscription{
+	border: 3px solid;
+	padding: 65px;
+	width: 40%;
+}
+#form{
+	background-image: url("back1.jpeg");
+}
+
+input, radio{
+	border: 1px solid;
+}

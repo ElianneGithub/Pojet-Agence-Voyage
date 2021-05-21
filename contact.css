@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background-image: url("back2.jpeg");
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 500px;
+  width: 100%;
+
+  background: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: red;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: coral;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height:100vh;
+	background-color: white;
+}
+.bgvideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 180%;
+	object-fit: cover;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	pointer-events: none;
+}
+@media (min-aspect-ratio:16/9){
+	.bgvideo{
+		width: auto;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9){
+	.bgvideo{
+		width: auto;
+		height: auto;
+	}
+}
+.barre{
+	background: red;
+}
+.menu{
+	float: right;
+	list-style: none;
+	margin: 13px;
+}
+.menu li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	font-family: american typewriter;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #fff;
+}
+.menu li a:hover{
+	background: coral;
+	border-bottom: 1px solid coral;
+	transition: .4s;
+}
+
+.bouton{
+	font-size: 20px;
+	color: white;
+	letter-spacing: 4px;
+	margin: 5px;
+	padding: 10px 30px;
+	text-decoration: none;
+	border: 1px solid coral;
+	border-radius: 30px;
+}
+
+/* Barre de recherche
+*/
+.barrederecherche{
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width:10  00px;
+}

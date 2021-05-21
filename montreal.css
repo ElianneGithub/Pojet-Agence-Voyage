@@ -1,0 +1,33 @@
+img{
+width: 307px;
+}
+
+.pays{
+	border: 1px solid ;
+	width: 20%;
+	background-color: black;
+}
+
+p{
+	color: white;
+}
+
+i{
+    position:absolute;
+	z-index: 2;
+	left: 250px;
+	top: 480px;
+}
+
+.nom{
+	border: 1px solid;
+	z-index: 2;
+	background-color: black;
+	position:absolute;
+	color: white;
+	top:6px;
+	width: 7%;
+	text-align: center;
+}
+	
+	 

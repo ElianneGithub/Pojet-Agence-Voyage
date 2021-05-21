@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulaire d'inscription</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="F.css">
+</head>
+<body>
+
+
+
+<div id="form">
+<form id="inscription">
+	
+
+<table>
+ 
+<tr> 
+<td><b> Civilité : </b> </td>
+ 
+<td> <input id="cocher" type="radio" name="champCivilité" value="Mlle"> Mademoiselle </td>
+<td> <input id="cocher" type="radio" name="champCivilité" value="Mme"> Madame </td>
+<td><input id="cocher" type="radio" name="champCivilité" value="Mr">  Monsieur </td>
+</tr>
+
+ 
+
+</table> 
+
+
+<table>
+
+<tr> <td> Nom :</td> <td> <input type="text"  placeholder="Nom" id="nom"> </td>  <td>  <br><br><br>
+
+<tr> <td> Prénom : </td> <td> <input id="Prenom" type="text"  placeholder="Prénom" > </td>  <td><br><br><br>
+
+<tr> <td> Email: </td> <td> <input type="email"  placeholder= "Email" id="email"> </td> <td> <br><br><br>
+
+<tr> <td> Confirmation de l'Email: </td> <td> <input   type="email"   placeholder="Confirmation de l'Email" id="emaill"> </td> <td> <br><br><br>
+
+<tr> <td> Mot de passe:  </td> <td> <input   type="password"  placeholder="Mot de Passe" id="password"> </td> <td> <br><br><br>
+
+<tr> <td> Confirmation du mot de passe: </td> <td> <input   type="password"   placeholder="Confirmation du Mot de Passe" id="passwordd"> </td> <td>  <br><br><br>
+
+<tr> <td> <button onclick="validation()" >Valider</button> </td> <td>  <br><br><br>
+
+</table>
+
+</form>
+</div>
+
+
+
+<script> 
+
+
+function validation(){
+var nom= document.getElementById("nom").value;
+var prenom = document.getElementById("Prenom").value;
+var email = document.getElementById("email").value;
+var cemail = document.getElementById("emaill").value;
+var mdp = document.getElementById("password").value;
+var cmdp = document.getElementById("passwordd").value;
+var civilite =document.getElementById("cocher");
+
+
+
+if ( (civilite.checked != true)){
+   alert("Veuillez chosir votre civilité !");
+   return false;
+}
+else{
+    true;
+}
+
+if ( ( nom == "" ) || ( prenom == "" ) || (email == "" ) || (cemail == "") || ( mdp == "") || (cmdp == "" )){
+   alert( "Veuillez complétez tous les champs !");
+   return false;
+}
+else{
+    true;
+}
+if((email.charAt((email.length())-4)!=".")||(email.charAt((email.length()-3)!=".")) || (email.indexOf("@") == -1) || (email.length < 6)) {
+    alert( "Veuillez entrer un email valide !");
+    return false;  
+}
+else{
+    true;
+}
+if ( (email != cemail)){
+   alert( "Veuillez confirmer votre adresse email !");
+   return false;
+}
+else{
+    true;
+}
+if ( (mdp != cmdp)){
+   alert( "Veuillez confirmer votre mot de passe !");
+   return false;
+}
+else{
+    true;
+}
+}
+</script>
+
+
+
+
+
+</body>
+</html>

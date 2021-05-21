@@ -1,0 +1,184 @@
+select, input{
+	width: 100%;
+	padding: 20px;
+    padding-left: 70px;
+    font-size: 20px;	
+}
+
+select{
+	max-width:268px;
+}
+
+input{
+	max-width:175px;
+}
+
+img{
+	z-index:2;
+	font-size:48px;
+    width: 150px;
+	position: absolute;
+	top: 100px;
+	left: 30px;
+}
+
+.input{
+	top: 100px;
+	left: 600px; 
+	padding: 65px;
+	border: 3px solid;
+	position: absolute;
+    background-image: url("back.jpeg");
+}
+
+i{
+	font-size:36px;
+}
+
+.depart{
+	position: absolute;
+	left: 80px;
+	top: 80px;
+}
+
+.arrive{
+	position: absolute;
+	left: 80px;
+	top: 165px;
+}
+
+.dated{
+	position: absolute;
+	left: 80px;
+	top: 275px;
+}
+
+.dater{
+	position: absolute;
+	left: 80px;
+	top: 380px;
+}
+
+.adulte{
+	position: absolute;
+	left: 80px;
+	top: 490px;
+}
+
+#Avion{
+	position: absolute;
+	left: 50px;
+	top: 560px;
+
+}
+
+#Bus{
+	position: absolute;
+	left: 180px;
+	top: 600px;
+}
+
+#Train{
+	position: absolute;
+	left: 280px;
+	top: 560px;
+
+}
+
+#transport{
+	font-size: 30px;
+	color: white;
+}
+
+
+
+.reverse{
+	position: absolute;
+	left: 183px;
+	top:125px;
+	z-index: 3;
+}
+.circle{
+	position: absolute;
+	left:150px;
+	top:90px;
+	z-index: 1;
+}
+
+button{
+	font-size: 30px;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height:100vh;
+	background-color: white;
+}
+.bgvideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 180%;
+	object-fit: cover;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	pointer-events: none;
+}
+@media (min-aspect-ratio:16/9){
+	.bgvideo{
+		width: auto;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9){
+	.bgvideo{
+		width: auto;
+		height: auto;
+	}
+}
+.barre{
+	background: red;
+}
+.menu{
+	float: right;
+	list-style: none;
+	margin: 13px;
+}
+.menu li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 10px;
+	font-family: american typewriter;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #fff;
+}
+.menu li a:hover{
+	background: coral;
+	border-bottom: 1px solid coral;
+	transition: .4s;
+}
+	color: white;
+}
+/* Barre de recherche
+*/
+.barrederecherche{
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width:10  00px;
+}
+
+
+
